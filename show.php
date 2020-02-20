@@ -1,33 +1,28 @@
 <?php
+$json = file_get_contents("http://rdapi.herokuapp.com/product/read.php");
+$data = json_decode($json,true);
+$list = $data['records'];
 
-$url = 'http://rdapi.herokuapp.com/product/read.php'; // path to your JSON file
-$data = file_get_contents($url); // put the contents of the file into a variable
-$json_data = json_decode($data,true); // decode the JSON feed
 
-echo $json_data[0]->name;
+?>
 
+<h1> API Exercise 1 </h1>
+
+<table border="1px">
+    <tr>
+        <td>Product</td>
+        <td>Price</td>
+	<td>Category</td> 
+    </tr>
+<?php
+foreach($list as $value){
+    ?>
+    <tr>
+        <td><a href="product_details.php?id=<?php echo $value['id'];?>"><?php echo $value['name'];?></a></td>
+        <td><?php echo $value['price'];?></td>
+	<td><?php echo $value['category'];?></td>
+    </tr>
+<?php
 }
-
-<html>
-<head>
-<title>API Test</title>
-<body>
-  <table>
-		<tr>
-		<th>Name</th>
-		<th>Description</th>
-      		<th>Price</th>
-      		<th>Category</th>
-		</tr>
-		<?php foreach ($json_data as $json_data) : ?>
-        <tr>
-            <td> <?php echo $json_data->name; ?> </td>
-            <td> <?php echo $json_data->description; ?> </td>
-            <td> <?php echo $json_data->price; ?> </td>
-            <td> <?php echo $json_data->category_name; ?> </td>
-        </tr>
-		<?php endforeach; ?>
+?>
 </table>
-</body>
-</head>
-</html>
