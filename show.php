@@ -2,7 +2,7 @@
 
 $url = 'http://rdapi.herokuapp.com/product/read.php'; // path to your JSON file
 $data = file_get_contents($url); // put the contents of the file into a variable
-$json_data = json_decode($data); // decode the JSON feed
+$json_data = json_decode($data,true); // decode the JSON feed
 
 echo $json_data[0]->name;
 
@@ -13,7 +13,6 @@ echo $json_data[0]->name;
 <title>API Test</title>
 <body>
   <table>
-	<tbody>
 		<tr>
 		<th>Name</th>
 		<th>Description</th>
@@ -28,7 +27,6 @@ echo $json_data[0]->name;
             <td> <?php echo $json_data->category_name; ?> </td>
         </tr>
 		<?php endforeach; ?>
-	</tbody>
 </table>
 </body>
 </head>
