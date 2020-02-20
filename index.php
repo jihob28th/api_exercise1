@@ -15,10 +15,10 @@ echo $json_data[0]->name;
   <table>
 	<tbody>
 		<tr>
-			<th>Name</th>
-			<th>Description</th>
-      <th>Price</th>
-      <th>Category</th>
+		<th>Name</th>
+		<th>Description</th>
+      		<th>Price</th>
+      		<th>Category</th>
 		</tr>
 		<?php foreach ($json_data as $json_data) : ?>
         <tr>
