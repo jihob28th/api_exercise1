@@ -26,3 +26,4 @@ curl_setopt_array($curl, array(
   
   curl_close($curl);
   echo $response;
+header("location:index.php?page=list");
