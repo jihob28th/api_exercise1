@@ -30,7 +30,7 @@ $search = $_POST['search'];
 foreach($list as $value){
     ?>
     <tr>
-        <td><a href="product_details.php?id=<?php echo $value['id'];?>"><?php echo $value['name'];?></a></td>
+        <td><a href="pro_profile.php?id=<?php echo $value['id'];?>"><?php echo $value['name'];?></a></td>
         <td><?php echo $value['price'];?></td>
 	<td><?php echo $value['category'];?></td>
 	<td><?php echo $value['description'];?></td>    
