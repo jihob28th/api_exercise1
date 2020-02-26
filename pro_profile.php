@@ -16,7 +16,7 @@
 			<a href="index.php?page=update&id=<?php echo $id ?>">Update</a>
 			<a href="pro_delete.php?id=<?php echo $id ?>">Delete</a></br></br>
 
-			<a href="show.php?id=<?php echo $id ?>"><== Back</a>
+			<a href="index.php?loadnav=readprod"><== Back</a>
 		</footer>
 	</div>
   </div>
