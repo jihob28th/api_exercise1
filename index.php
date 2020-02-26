@@ -8,7 +8,6 @@ $loadnav = (isset($_GET['loadnav']) && $_GET['loadnav'] != '') ? $_GET['loadnav'
     <body>
                         <ul> 
                         <li> <a href="index.php?loadnav=readprod"> Show Product</a> </li>
-                        <li> <a href="index.php?loadnav=readcat"> Show Categories </a> </li>
                         <li> <a href="index.php?loadnav=create"> Create  </a> </li>
                         <li> <a href="index.php?loadnav=delete"> Delete  </a> </li>
                         </ul>
