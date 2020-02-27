@@ -13,7 +13,7 @@
 		<p>	<b>Category:  </b><?php echo $result['category_name'];?> </p>
 </table>
 		<footer>
-			<a href="form_update.php">Update</a>
+			<a href="form_update.php?id=<?php echo $id ?>">Update</a>
 			<a href="pro_delete.php?id=<?php echo $id ?>">Delete</a></br></br>
 
 			<a href="index.php?loadnav=readprod"><== Back</a>
