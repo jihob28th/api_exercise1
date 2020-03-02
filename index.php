@@ -24,8 +24,8 @@ $loadnav = (isset($_GET['loadnav']) && $_GET['loadnav'] != '') ? $_GET['loadnav'
                             require_once 'show.php';
                             break;
                             case 'list':
-			                require_once('showlist.php');
-		                    break;
+			    require_once('showlist.php');
+		            break;
                             case 'categories':
                             require_once 'categories.php';
                             break;
