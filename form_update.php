@@ -9,26 +9,41 @@
 	$catData = json_decode($jsonCat,true);
 	$category = $catData['records'];
 ?>
-<html>
-<br/>
-<br/>
-<br/>
-
-<form action="pro_update.php?id=<?php echo $id ?>" method="POST">
-	Name:<br/><?php echo $result['name'];?><br/><br/>
-	Description:<br/><?php echo $result['description']; ?></textarea><br/><br/>
-	Price:<br/><?php echo $result['price']; ?><br/><br/>
-	Category:<select name="category">
-		<option value="<?php echo $result['category_id'];?>"><?php echo $result['category_name'];?></option>
-	<?php
-      foreach($category as $cview){
-    ?>
-		<option value="<?php echo $cview['id']?>"><?php echo $cview['name']?></option>
-    <?php
-      }
-    ?>
-	</select>
-	<br/><br/><input type="submit" name="submit" value="Done"/>
-</form>
+<html> 
+    <head>
+      <title>  API Exercise 1 </title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+<body>
+	<div class="navhead">
+            <div class="navigation">
+                        <ul> 
+                        <li> <a href="index.php?loadnav=home"> <b>HOME </b></a> </li>
+                        <li> <a href="index.php?loadnav=readprod"> SHOW PRODUCT</a> </li>
+                        <li> <a href="index.php?loadnav=categories"> CATEGORIES</a> </li>
+                        <li> <a href="index.php?loadnav=create"> CREATE  </a> </li>
+                        </ul>
+                        </div>
+					</div>
+					
+					<div class="home_body"><br/><br/>
+					<div class="content">
+		<form action="pro_update.php?id=<?php echo $id ?>" method="POST">
+			<b>Name:</b> &nbsp; <?php echo $result['name'];?><br/><br/>
+			<b>Description:</b> &nbsp; <?php echo $result['description']; ?></textarea><br/><br/>
+			<b>Price:</b> &nbsp; <?php echo $result['price']; ?><br/><br/>
+			<b>Category:</b> <select name="category">
+				<option value="<?php echo $result['category_id'];?>"><?php echo $result['category_name'];?></option>
+			<?php
+			foreach($category as $cview){
+			?>
+				<option value="<?php echo $cview['id']?>"><?php echo $cview['name']?></option>
+			<?php
+			}
+			?>
+			</select>
+			<br/><br/><input type="submit" name="submit" value="Done"/>
+		</form>
+	</div>
 </div>
 </html>

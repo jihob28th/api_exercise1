@@ -16,26 +16,33 @@ $search = $_POST['search'];
 
 
 ?>
-
+<html>
+<body>
+    <div class="main_body"><br/>
 <h1> API Exercise 1 </h1>
 
+    <form action="index.php?page=list" method="POST">
+	    Search: <input type="text" name="search" placeholder="Search Product Name">
+		        <input type="submit" name="submit" value="Search">
+    </form>
+<center>    
 <table border="1px">
     <tr>
-        <td>Product</td>
-        <td>Price</td>
-	<td>Category</td>
-	<th>Description</th>
+        <th>Product</th>
+        <th>Category</th>
     </tr>
 <?php
 foreach($list as $value){
     ?>
     <tr>
         <td><a href="pro_profile.php?id=<?php echo $value['id'];?>"><?php echo $value['name'];?></a></td>
-        <td><?php echo $value['price'];?></td>
-	<td><?php echo $value['category'];?></td>
-	<td><?php echo $value['description'];?></td>    
+	    <td><?php echo $value['category_name'];?></td>   
     </tr>
 <?php
 }
 ?>
-</table>
+</table><br/>
+</center>
+</div>
+</body>
+</html>

@@ -5,19 +5,39 @@
  $details = array('records' => $data);
  $result = $details['records'];
 ?>
-<html>
-			<h1><b><?php echo $result['name']; ?></b></h1>
-<table border=1>
-		<p> <b>Price:  </b><?php echo $result['price']; ?></p>
-		<p>	<b>Description:  </b><?php echo $result['description']; ?> </p>
-		<p>	<b>Category:  </b><?php echo $result['category_name'];?> </p>
-</table>
-		<footer>
-			<a href="form_update.php?id=<?php echo $id ?>">Update</a>
-			<a href="pro_delete.php?id=<?php echo $id ?>">Delete</a></br></br>
+<html> 
+    <head>
+      <title>  API Exercise 1 </title>
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+<body>
+	<div class="navhead">
+            <div class="navigation">
+                        <ul> 
+                        <li> <a href="index.php?loadnav=home"> <b>HOME </b></a> </li>
+                        <li> <a href="index.php?loadnav=readprod"> SHOW PRODUCT</a> </li>
+                        <li> <a href="index.php?loadnav=categories"> CATEGORIES</a> </li>
+                        <li> <a href="index.php?loadnav=create"> CREATE  </a> </li>
+                        </ul>
+                        </div>
+                    </div>
 
-			<a href="index.php?loadnav=readprod"><== Back</a>
-		</footer>
-	</div>
+  <div class="home_body"><br/><br/>
+  <div class="content">
+		<h1><b><?php echo $result['name']; ?></b></h1>
+		<table border=1>
+				<p> <b>Price:  </b><?php echo $result['price']; ?></p>
+				<p>	<b>Description:  </b><?php echo $result['description']; ?> </p>
+				<p>	<b>Category:  </b><?php echo $result['category_name'];?> </p>
+		</table>
+				<footer>
+					<a href="form_update.php?id=<?php echo $id ?>">Update | </a>
+					<a href="pro_delete.php?id=<?php echo $id ?>">Delete</a></br></br>
+
+					<a href="index.php?loadnav=readprod"><== Back</a>
+				</footer>
+			</div>
+		</div>
   </div>
+</body>
 </html>

@@ -6,10 +6,12 @@ $list = $data['records'];
 
 
 ?>
-
+<html>
+<body>
+    <div class="main_body"><br/>
 <h1> Category list </h1>
-
-<table>
+<center>
+<table border=1px>
     <tr>
         <th>Category ID</th>
         <th>Category Name</th>
@@ -24,4 +26,8 @@ foreach($list as $value){
 <?php
 }
     ?>
-</table>
+</table><br/>
+</center>
+</div>
+</body>
+</html>
