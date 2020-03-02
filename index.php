@@ -11,7 +11,7 @@ $loadnav = (isset($_GET['loadnav']) && $_GET['loadnav'] != '') ? $_GET['loadnav'
             <div class="navigation">
                         <ul> 
                         <li> <a href="index.php?loadnav=home"> <b>HOME </b></a> </li>
-                        <li> <a href="index.php?loadnav=readprod"> SHOW PRODUCT</a> </li>
+                        <li> <a href="index.php?loadnav=list"> SHOW PRODUCT</a> </li>
                         <li> <a href="index.php?loadnav=categories"> CATEGORIES</a> </li>
                         <li> <a href="index.php?loadnav=create"> CREATE  </a> </li>
                         </ul>
@@ -20,11 +20,8 @@ $loadnav = (isset($_GET['loadnav']) && $_GET['loadnav'] != '') ? $_GET['loadnav'
                
                         <?php 
                         switch($loadnav){
-                            case 'readprod':
-                            require_once 'show.php';
-                            break;
                             case 'list':
-			    require_once('showlist.php');
+			    require_once('show.php');
 		            break;
                             case 'categories':
                             require_once 'categories.php';
