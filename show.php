@@ -35,8 +35,8 @@ $search = $_POST['search'];
 foreach($list as $result){
     ?>
     <tr>
-        <td><a href="pro_profile.php?id=<?php echo $value['id'];?>"><?php echo $value['name'];?></a></td>
-	    <td><?php echo $value['category_name'];?></td>   
+        <td><a href="pro_profile.php?id=<?php echo $result['id'];?>"><?php echo $result['name'];?></a></td>
+	<td><?php echo $result['category_name'];?></td>   
     </tr>
 <?php
 }
