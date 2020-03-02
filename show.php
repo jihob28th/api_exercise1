@@ -23,7 +23,7 @@ $search = $_POST['search'];
 
     <form action="index.php?page=list" method="POST">
 	    Search: <input type="text" name="search" placeholder="Search Product Name">
-		        <input type="submit" name="submit" value="search">
+		        <input type="submit" name="submit" value="Search">
     </form>
 <center>    
 <table border="1px">
@@ -32,7 +32,7 @@ $search = $_POST['search'];
         <th>Category</th>
     </tr>
 <?php
-foreach($list as $value){
+foreach($list as $result){
     ?>
     <tr>
         <td><a href="pro_profile.php?id=<?php echo $value['id'];?>"><?php echo $value['name'];?></a></td>
