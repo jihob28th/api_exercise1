@@ -10,7 +10,16 @@
         <input type="text" name="name" placeholder="name"/>
         <input type="text" name="description" placeholder="description"/>
         <input type="text" name="price" placeholder="price"/>
-        <input type="text" name="category" placeholder="category"/>
+        Category:<select name="category">
+		<option value="">--Select Category--</option>
+	<?php
+      foreach($category as $cview){
+    ?>
+		<option value="<?php echo $cview['id']?>"><?php echo $cview['name']?></option>
+    <?php
+      }
+    ?>
+	</select>
         <input type="submit" name="submit" value="submit"/>
     </form>
   </div>
