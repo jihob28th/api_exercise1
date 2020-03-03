@@ -34,7 +34,7 @@
 					<a href="form_update.php?id=<?php echo $id ?>">Update | </a>
 					<a href="pro_delete.php?id=<?php echo $id ?>">Delete</a></br></br>
 
-					<a href="index.php?loadnav=readprod"><== Back</a>
+					<a href="index.php?loadnav=list"><== Back</a>
 				</footer>
 			</div>
 		</div>
