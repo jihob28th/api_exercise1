@@ -27,8 +27,8 @@
 		<h1><b><?php echo $result['name']; ?></b></h1>
 		<table border=1>
 				<p> <b>Price:  </b><?php echo $result['price']; ?></p>
-				<p>	<b>Description:  </b><?php echo $result['description']; ?> </p>
-				<p>	<b>Category:  </b><?php echo $result['category_name'];?> </p>
+				<p> <b>Description:  </b><?php echo $result['description']; ?> </p>
+				<p> <b>Category:  </b><?php echo $result['category_name'];?> </p>
 		</table>
 				<footer>
 					<a href="form_update.php?id=<?php echo $id ?>">Update | </a>
