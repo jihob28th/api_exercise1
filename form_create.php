@@ -1,3 +1,9 @@
+<?php
+	//category
+	$jsonCat = file_get_contents('http://rdapi.herokuapp.com/category/read.php');
+	$catData = json_decode($jsonCat,true);
+	$category = $catData['records'];
+?>
 <html> 
     <head>
       <title>  API Exercise 1 </title>
