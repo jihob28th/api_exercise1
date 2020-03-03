@@ -29,9 +29,9 @@
 					<div class="home_body"><br/><br/>
 					<div class="content">
 		<form action="pro_update.php?id=<?php echo $id ?>" method="POST">
-			<b>Name:</b> &nbsp; <?php echo $result['name'];?><br/><br/>
-			<b>Description:</b> &nbsp; <?php echo $result['description']; ?></textarea><br/><br/>
-			<b>Price:</b> &nbsp; <?php echo $result['price']; ?><br/><br/>
+			<b>Name:</b><input type="text" name="name" value="<?php echo $result['name'];?>"/><br/><br/>
+			<b>Description:</b><textarea name="description"><?php echo $result['description']; ?></textarea><br/><br/>
+			<b>Price:</b><input type="number" name="price" value="<?php echo $result['price'];?>"/><br/><br/>
 			<b>Category:</b> <select name="category">
 				<option value="<?php echo $result['category_id'];?>"><?php echo $result['category_name'];?></option>
 			<?php
