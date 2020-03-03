@@ -21,7 +21,7 @@ $loadnav = (isset($_GET['loadnav']) && $_GET['loadnav'] != '') ? $_GET['loadnav'
                         <?php 
                         switch($loadnav){
                             case 'list':
-			    require_once('show.php');
+			    require_once 'show.php';
 		            break;
                             case 'categories':
                             require_once 'categories.php';
