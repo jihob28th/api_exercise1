@@ -23,7 +23,7 @@ $search = $_POST['search'];
 
 	<form action="index.php?page=list" method="POST">
 	Search:<input type="text" name="search" placeholder="Search Product Name">
-		<button type="submit" name="submit" ></button>
+		<button type="submit" name="submit" >Search</button>
 	</form>
 <center>    
 <table border="1px">
