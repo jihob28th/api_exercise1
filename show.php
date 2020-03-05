@@ -21,7 +21,7 @@ $search = $_POST['search'];
     <div class="main_body"><br/>
 <h1> API Exercise 1 </h1>
 
-    <form action="index.php?loadnav=list" method="POST">
+    <form action="index.php?page=list" method="POST">
 	    Search: <input type="text" name="search" placeholder="Search Product Name">
 		        <input type="submit" name="submit" value="Search">
     </form>
