@@ -25,11 +25,9 @@
 				<td> <?php echo $result['price']; ?></td>
 				<td> <?php echo $result['description']; ?> </td>
 				<td> <?php echo $result['category_name'];?> </td>
+				<td> <a href="form_update.php?id=<?php echo $id ?>"><h4>Update</h4></a></td>
+				<td> <a href="pro_delete.php?id=<?php echo $id ?>"><h4>Delete</h4></a></br></br></td>
 			</tr>
-				<footer>
-				<td>	<a href="form_update.php?id=<?php echo $id ?>">Update | </a></td>
-				<td>	<a href="pro_delete.php?id=<?php echo $id ?>">Delete</a></br></br></td>
-				</footer>
 	 	</table>
 			</div>
 		</div>
