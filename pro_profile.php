@@ -16,13 +16,14 @@
   <div class="content">
 		<h1><b><?php echo $result['name']; ?></b></h1>
 		<table border=1>
-				<p> <b>Price:  </b><?php echo $result['price']; ?></p>
-				<p> <b>Description:  </b><?php echo $result['description']; ?> </p>
-				<p> <b>Category:  </b><?php echo $result['category_name'];?> </p>
-		
+			<ul>
+				<li> <b>Price:  </b><?php echo $result['price']; ?></li>
+				<li> <b>Description:  </b><?php echo $result['description']; ?> </li>
+				<li> <b>Category:  </b><?php echo $result['category_name'];?> </li>
+			</ul>
 				<footer>
-					<a href="form_update.php?id=<?php echo $id ?>">Update | </a>
-					<a href="pro_delete.php?id=<?php echo $id ?>">Delete</a></br></br>
+				<li>	<a href="form_update.php?id=<?php echo $id ?>">Update | </a></li>
+				<li>	<a href="pro_delete.php?id=<?php echo $id ?>">Delete</a></br></br></li>
 
 				</footer>
 	 	</table>
