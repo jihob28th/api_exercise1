@@ -19,13 +19,13 @@
 				<p> <b>Price:  </b><?php echo $result['price']; ?></p>
 				<p> <b>Description:  </b><?php echo $result['description']; ?> </p>
 				<p> <b>Category:  </b><?php echo $result['category_name'];?> </p>
-		</table>
+		
 				<footer>
 					<a href="form_update.php?id=<?php echo $id ?>">Update | </a>
 					<a href="pro_delete.php?id=<?php echo $id ?>">Delete</a></br></br>
 
-					<a href="index.php?loadnav=list"><== Back</a>
 				</footer>
+	 	</table>
 			</div>
 		</div>
   </div>
