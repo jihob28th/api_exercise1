@@ -1,14 +1,12 @@
 .main_body {
     text-align: center;
     height: auto;
-    width: 50%;
     background: linear-gradient(to bottom, #ffccff 0%, #66ccff 100%);
 }
 
 .home_body {
     text-align: center;
     height: 100%;
-    width: 50%;
     background: linear-gradient(to bottom, #ffccff 0%, #66ccff 100%);
 }
 
@@ -24,7 +22,7 @@
     border: 2px solid whitesmoke;
     background-color: whitesmoke;
     height: 5%;
-    width: 50%;
+    width: auto;
     padding: 20px;
     overflow: hidden;
     text-indent: 60px;
