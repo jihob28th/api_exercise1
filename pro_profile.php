@@ -15,16 +15,20 @@
   <div class="home_body"><br/><br/>
   <div class="content">
 		<h1><b><?php echo $result['name']; ?></b></h1>
-		<table border=1>
-			<ul>
-				<li> <b>Price:  </b><?php echo $result['price']; ?></li>
-				<li> <b>Description:  </b><?php echo $result['description']; ?> </li>
-				<li> <b>Category:  </b><?php echo $result['category_name'];?> </li>
-			</ul>
+		<table border="1px">
+			    <tr>
+				<th>Price</th>
+				<th>Description</th>
+				<th>Category</th>
+			    </tr>
+			<tr>
+				<td> <?php echo $result['price']; ?></td>
+				<td> <?php echo $result['description']; ?> </td>
+				<td> <?php echo $result['category_name'];?> </td>
+			</tr>
 				<footer>
-				<li>	<a href="form_update.php?id=<?php echo $id ?>">Update | </a></li>
-				<li>	<a href="pro_delete.php?id=<?php echo $id ?>">Delete</a></br></br></li>
-
+				<td>	<a href="form_update.php?id=<?php echo $id ?>">Update | </a></td>
+				<td>	<a href="pro_delete.php?id=<?php echo $id ?>">Delete</a></br></br></td>
 				</footer>
 	 	</table>
 			</div>
