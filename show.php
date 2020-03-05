@@ -21,10 +21,10 @@ $search = $_POST['search'];
     <div class="main_body"><br/>
 <h1> API Exercise 1 </h1>
 
-    <form action="index.php?page=list" method="POST">
-	    Search: <input type="text" name="search" placeholder="Search Product Name">
-		        <input type="submit" name="submit" value="Search">
-    </form>
+	<form action="index.php?page=list" method="POST">
+	Search:<input type="text" name="search" placeholder="Search Product Name">
+		<button type="submit" name="submit" ></button>
+	</form>
 <center>    
 <table border="1px">
     <tr>
@@ -35,7 +35,7 @@ $search = $_POST['search'];
 foreach($list as $result){
     ?>
     <tr>
-        <td> <a href="index.php?page=pro_profile.php&id=<?php echo $result['id'];?>"> <?php echo $result['name']; ?> </a> </td>
+        <td> <a href="index.php?page=profile&id=<?php echo $result['id'];?>"> <?php echo $result['name']; ?> </a> </td>
 	<td><?php echo $result['category_name'];?></td>   
     </tr>
 <?php
